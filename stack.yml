@@ -10,3 +10,7 @@ functions:
     environment:
       hmac_enabled: false
 
+  echo-me:
+    lang: dockerfile
+    handler: ./echo-me
+    image: echo-me:latest
