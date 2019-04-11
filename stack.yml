@@ -1,0 +1,12 @@
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  import-secrets:
+    lang: dockerfile
+    handler: ./import-secrets
+    image: import-secrets2:latest
+    environment:
+      hmac_enabled: false
+
