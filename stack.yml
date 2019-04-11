@@ -4,9 +4,9 @@ provider:
 
 functions:
   import-secrets:
-    lang: dockerfile
+    lang: go
     handler: ./import-secrets
-    image: import-secrets2:latest
+    image: import-secrets:latest
     environment:
       hmac_enabled: false
 
