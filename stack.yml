@@ -8,7 +8,7 @@ functions:
     handler: ./import-secrets
     image: import-secrets:latest
     environment:
-      hmac_enabled: false
+      validate_hmac: false
 
   echo-me:
     lang: dockerfile
